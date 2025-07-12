@@ -1,22 +1,28 @@
 [
-    {
-        "title": "Les Champs-Élysées",
-        "lyrics": "Aux Champs-Élysées, aux Champs-Élysées\nAu soleil, sous la pluie, à midi ou à minuit\nIl y a tout ce que vous voulez aux Champs-Élysées..."
-    },
-    {
-        "title": "L'Hymne à l'amour",
-        "lyrics": "Si le ciel tombait sur nous\nSi la mer se desséchait\nPeu m'importerait, mon amour\nCar toi, toi, je t'aimerais..."
-    },
-    {
-        "title": "Vois sur ton chemin",
-        "lyrics": "Vois sur ton chemin\nGamins oubliés égarés\nDonne-leur la main\nPour les mener vers d'autres lendemains..."
-    },
-    {
-        "title": "Je vole",
-        "lyrics": "Mes chers parents, je pars\nJe vous aime mais je pars\nVous n'aurez plus d'enfant\nCe soir, je vole..."
-    },
-    {
-        "title": "La Bohème",
-        "lyrics": "Je vous parle d'un temps\nQue les moins de vingt ans\nNe peuvent pas connaître\nMontmartre en ce temps-là..."
-    }
+    { "title": "Avia Fanahy", "lyrics": "Paroles à insérer ici..." },
+    { "title": "omeo hery", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Nao lahy", "lyrics": "Paroles à insérer ici..." },
+    { "title": "izaho irery", "lyrics": "Paroles à insérer ici..." },
+    { "title": "2e Consolation", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Isaorana", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Isaoranay anao", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Omeo tso-drano", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Tendry", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Ny fitiavan'ny Jeso", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Vavaka", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Ny lalanao Jesosy", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Tompo ô! Fantatrao", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Fanantenanako", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Inty aho", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Izaho irery", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Voaloboka", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Ny Fitiavanao anay", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Ilaiko ny Fitiavanao", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Izy", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Telo izay iray", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Manao azafady", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Raha Tonga anio", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Masina", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Eo am-pelatananao", "lyrics": "Paroles à insérer ici..." },
+    { "title": "Eza anao", "lyrics": "Paroles à insérer ici..." }
 ]
