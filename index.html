@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Chorale - Accueil</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 10px; background: #f5f5f5; }
+        header { text-align: center; background: #e0f7fa; padding: 10px; border-radius: 5px; }
+        nav a { margin: 0 10px; color: #007bff; text-decoration: none; }
+        section { margin: 20px 0; padding: 15px; background: #fff; border: 1px solid #ddd; border-radius: 5px; }
+        h2 { color: #007bff; }
+        #search-bar { width: 100%; padding: 10px; margin: 10px 0; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; }
+        #song-list { list-style: none; padding: 0; }
+        .song-item { padding: 10px; margin: 5px 0; background: #fff; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; }
+        .song-item:hover { background: #e0f7fa; }
+        #lyrics-display { display: none; margin: 20px 0; padding: 15px; background: #fff; border: 1px solid #ddd; border-radius: 5px; }
+        #error-message { color: red; display: none; text-align: center; }
+        .member-list { list-style: none; padding: 0; }
+        .member-list li { margin: 5px 0; }
+        footer { text-align: center; margin-top: 20px; color: #555; }
+        @media (max-width: 600px) { body { font-size: 14px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chœur d'hommes ANDRY</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="#paroles">Paroles</a>
+        </nav>
+    </header>
+    <main>
+        <section id="historique">
+            <h2>Historique de la chorale</h2>
+            <p>Notre chorale, fondée en [année], est un groupe passionné par le chant choral. Depuis sa création à Akany Fitiavana FLM 67Ha, elle réunit des membres dévoués pour partager la musique et la foi à travers des performances vibrantes. [Ajoutez votre historique ici.]</p>
+        </section>
+
+        <section id="membres">
+            <h2>Membres de la chorale (20)</h2>
+            <ul class="member-list">
+                <li>Membre 1</li>
+                <li>Membre 2</li>
+                <li>Membre 3</li>
+                <!-- Ajoutez les 17 autres membres ici -->
+                <li>Membre 20</li>
+            </ul>
+        </section>
+
+        <section id="bureau">
+            <h2>Membres du bureau</h2>
+            <p>Président : [Nom du président]</p>
+            <p>Secrétaire : [Nom du secrétaire]</p>
+            <p>Trésorier : [Nom du trésorier]</p>
+        </section>
+
+        <section id="chef-choeur">
+            <h2>Chef de chœur</h2>
+            <p>Notre chef de chœur, [Nom du chef], dirige avec passion et expertise, guidant la chorale vers l'excellence musicale.</p>
+        </section>
+
+        <section id="repetitions">
+            <h2>Répétitions</h2>
+            <p>Les répétitions ont lieu chaque <strong>mardi et jeudi à 18h</strong> à <strong>Akany Fitiavana FLM 67Ha</strong>.</p>
+        </section>
+
+        <section id="paroles">
+            <h2>Paroles des chansons</h2>
+            <input type="text" id="search-bar" placeholder="Rechercher une chanson...">
+            <div id="error-message">Erreur : impossible de charger les chansons. Vérifiez songs.json.</div>
+            <ul id="song-list"></ul>
+            <div id="lyrics-display">
+                <h3 id="song-title"></h3>
+                <p id="song-lyrics"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Ma Chorale - Akany Fitiavana FLM 67Ha</p>
+    </footer>
+    <script>
+        fetch('./songs.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Fichier songs.json non trouvé');
+                }
+                return response.json();
+            })
+            .then(songs => {
+                const songList = document.getElementById('song-list');
+                const lyricsDisplay = document.getElementById('lyrics-display');
+                const songTitle = document.getElementById('song-title');
+                const songLyrics = document.getElementById('song-lyrics');
+                let allSongs = songs;
+
+                function displaySongs(songsToShow) {
+                    songList.innerHTML = '';
+                    songsToShow.forEach(song => {
+                        const li = document.createElement('li');
+                        li.className = 'song-item';
+                        li.textContent = song.title;
+                        li.onclick = () => {
+                            songTitle.textContent = song.title;
+                            songLyrics.innerHTML = song.lyrics.replace(/\n/g, '<br>');
+                            lyricsDisplay.style.display = 'block';
+                        };
+                        songList.appendChild(li);
+                    });
+                }
+
+                displaySongs(allSongs);
+
+                document.getElementById('search-bar').addEventListener('input', (e) => {
+                    const searchTerm = e.target.value.toLowerCase();
+                    const filteredSongs = allSongs.filter(song => 
+                        song.title.toLowerCase().includes(searchTerm)
+                    );
+                    displaySongs(filteredSongs);
+                });
+            })
+            .catch(error => {
+                document.getElementById('error-message').style.display = 'block';
+                console.error('Erreur:', error);
+            });
+    </script>
+</body>
+</html>
