@@ -1,127 +1,899 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Chorale - Accueil</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 10px; background: #f5f5f5; }
-        header { text-align: center; background: #e0f7fa; padding: 10px; border-radius: 5px; }
-        nav a { margin: 0 10px; color: #007bff; text-decoration: none; }
-        section { margin: 20px 0; padding: 15px; background: #fff; border: 1px solid #ddd; border-radius: 5px; }
-        h2 { color: #007bff; }
-        #search-bar { width: 100%; padding: 10px; margin: 10px 0; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; }
-        #song-list { list-style: none; padding: 0; }
-        .song-item { padding: 10px; margin: 5px 0; background: #fff; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; }
-        .song-item:hover { background: #e0f7fa; }
-        #lyrics-display { display: none; margin: 20px 0; padding: 15px; background: #fff; border: 1px solid #ddd; border-radius: 5px; }
-        #error-message { color: red; display: none; text-align: center; }
-        .member-list { list-style: none; padding: 0; }
-        .member-list li { margin: 5px 0; }
-        footer { text-align: center; margin-top: 20px; color: #555; }
-        @media (max-width: 600px) { body { font-size: 14px; } }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#4f46e5" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Chœur d'hommes ANDRY - Paroles</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :root {
+      --primary-color: #4f46e5;
+      --secondary-color: #10b981;
+      --accent-color: #f59e0b;
+      --text-color: #1e293b;
+      --text-secondary: #64748b;
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+      --header-height: 60px;
+      --tabbar-height: 60px;
+      --sidebar-width: 250px;
+      --shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+      --gradient: linear-gradient(135deg, #4f46e5, #10b981);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+    }
+
+    .dark-mode {
+      --primary-color: #6366f1;
+      --secondary-color: #34d399;
+      --accent-color: #f59e0b;
+      --text-color: #f8fafc;
+      --text-secondary: #94a3b8;
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --border-color: #334155;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--header-height);
+      background-color: var(--card-bg);
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      z-index: 1000;
+      box-shadow: var(--shadow-sm);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .header-title {
+      font-size: 18px;
+      font-weight: 600;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 12px;
+    }
+
+    .header-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-full);
+      background-color: var(--primary-color);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .header-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .sidebar {
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      width: var(--sidebar-width);
+      height: calc(100vh - var(--header-height));
+      background-color: var(--card-bg);
+      border-right: 1px solid var(--border-color);
+      padding: 20px;
+      display: none;
+      flex-direction: column;
+      gap: 16px;
+      z-index: 900;
+    }
+
+    .sidebar.active {
+      display: flex;
+    }
+
+    .sidebar-item {
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-item:hover,
+    .sidebar-item.active {
+      background: var(--gradient);
+      color: white;
+      transform: translateX(5px);
+    }
+
+    .tab-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: var(--tabbar-height);
+      background-color: var(--card-bg);
+      display: flex;
+      border-top: 1px solid var(--border-color);
+      z-index: 1000;
+    }
+
+    .tab-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 10px;
+      transition: all 0.2s ease;
+    }
+
+    .tab-item.active {
+      color: var(--primary-color);
+    }
+
+    .tab-icon {
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
+
+    .app-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: calc(var(--header-height) + 16px) 16px var(--tabbar-height);
+    }
+
+    .paroles-section {
+      background-color: var(--card-bg);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .search-filter-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .search-container {
+      position: relative;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .search-bar {
+      width: 100%;
+      padding: 12px 16px 12px 40px;
+      background-color: var(--bg-color);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-full);
+      color: var(--text-color);
+      font-size: 14px;
+      transition: border-color 0.2s ease;
+    }
+
+    .search-bar:focus {
+      outline: none;
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-secondary);
+    }
+
+    .song-list {
+      list-style: none;
+      max-height: 70vh;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .song-item {
+      background-color: var(--card-bg);
+      margin-bottom: 8px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .song-item:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .song-header {
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .song-play-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gradient);
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 16px;
+      transition: transform 0.2s ease;
+    }
+
+    .song-play-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .song-title {
+      font-size: 14px;
+      font-weight: 500;
+      flex-grow: 1;
+    }
+
+    .load-more {
+      display: block;
+      margin: 16px auto;
+      padding: 12px 24px;
+      background: var(--gradient);
+      color: white;
+      border: none;
+      border-radius: var(--radius-full);
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .load-more:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #10b981, #4f46e5);
+    }
+
+    .lyrics-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .lyrics-modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lyrics-container {
+      background: linear-gradient(135deg, #ffffff, #f3f4f6);
+      border-radius: var(--radius-lg);
+      width: 90%;
+      max-width: 600px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      animation: slideIn 0.3s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+   /* Style pour l'en-tête du modal */
+.lyrics-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Dégradé dynamique */
+  padding: 20px; /* Plus d'espace */
+  display: flex;
+  justify-content: center; /* Centrer le titre */
+  align-items: center;
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
+  position: relative; /* Pour positionner le bouton de fermeture */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+}
+
+/* Style pour le titre des chansons */
+.lyrics-title {
+  font-size: 24px; /* Taille augmentée pour plus d'impact */
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Ombre pour profondeur */
+  text-align: center; /* Centrage du texte */
+  margin: 0;
+  flex-grow: 1; /* Prend tout l'espace disponible */
+  letter-spacing: 0.8px; /* Espacement des lettres pour élégance */
+  font-family: 'Playfair Display', 'Georgia', serif; /* Police élégante */
+}
+
+/* Style pour le bouton de fermeture */
+.close-lyrics {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px; /* Taille augmentée pour visibilité */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.2s ease;
+  position: absolute;
+  right: 20px; /* Positionné à droite */
+  top: 50%;
+  transform: translateY(-50%); /* Centré verticalement */
+}
+
+.close-lyrics:hover {
+  transform: translateY(-50%) scale(1.2); /* Zoom au lieu de rotation */
+  color: var(--accent-color); /* Changement de couleur au survol */
+}
+
+/* Style pour le conteneur des paroles */
+.lyrics-content {
+  flex-grow: 1;
+  padding: 30px; /* Padding généreux */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(243, 244, 246, 0.9)); /* Fond verre dépoli */
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg); /* Coins arrondis en bas */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure subtile */
+  backdrop-filter: blur(8px); /* Effet verre dépoli */
+  -webkit-backdrop-filter: blur(8px); /* Support Safari */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Ombre interne */
+}
+
+/* Style pour le texte des paroles */
+.lyrics-text {
+  white-space: pre-line;
+  font-size: 20px; /* Taille de police lisible */
+  line-height: 2.2; /* Espacement généreux */
+  color: var(--text-color);
+  text-align: left ; /* Centrage pour une apparence harmonieuse (option : justify) */
+  font-family: 'Georgia', 'Times New Roman', serif; /* Police élégante */
+  animation: fadeIn 1s ease-in-out; /* Animation fluide */
+}
+
+/* Style spécifique pour le mode sombre */
+.dark-mode .lyrics-content {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.95), rgba(42, 52, 71, 0.9)); /* Dégradé sombre */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Bordure subtile */
+}
+
+.dark-mode .lyrics-text {
+  color: #e5e7eb; /* Texte clair pour contraste */
+}
+
+/* Style pour les refrains */
+.lyrics-text strong,
+.lyrics-text .refrain {
+  font-weight: 700;
+  color: var(--primary-color); /* Couleur principale pour les refrains */
+  display: block;
+  margin: 20px 0 10px; /* Espacement accru */
+  text-transform: uppercase; /* Majuscules pour les refrains */
+  font-size: 22px; /* Légèrement plus grand */
+}
+
+/* Style pour les couplets */
+.lyrics-text .couplet {
+  font-style: italic; /* Italique pour les couplets */
+  color: var(--text-secondary);
+  margin-bottom: 15px; /* Espacement sous les couplets */
+}
+
+/* Animation d'apparition pour les paroles */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Déplacement vertical plus prononcé */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+  .lyrics-header {
+    padding: 16px; /* Padding réduit */
+  }
+
+  .lyrics-title {
+    font-size: 20px; /* Taille réduite pour mobile */
+    letter-spacing: 0.5px;
+  }
+
+  .lyrics-content {
+    padding: 20px; /* Padding réduit */
+  }
+
+  .lyrics-text {
+    font-size: 18px; /* Taille réduite pour mobile */
+    line-height: 2; /* Espacement ajusté */
+  }
+
+  .lyrics-text .refrain {
+    font-size: 20px; /* Taille réduite pour refrains */
+  }
+}align    .audio-player {
+      padding: 15px;
+      background-color: var(--card-bg);
+      border-bottom-left-radius: var(--radius-lg);
+      border-bottom-right-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .audio-player audio {
+      width: 70%;
+      outline: none;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .speed-controls {
+      display: none; /* Caché par défaut, affiché si audio présent */
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .speed-btn {
+      width: 30px;
+      height: 30px;
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .speed-btn:hover {
+      background-color: var(--accent-color);
+      transform: scale(1.1);
+    }
+
+    #playbackRateDisplay {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-top: 5px;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 30px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    .dark-mode-toggle {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background: var(--gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      border: none;
+      box-shadow: var(--shadow-md);
+      z-index: 100;
+      transition: transform 0.2s ease;
+    }
+
+    .dark-mode-toggle:hover {
+      transform: rotate(360deg);
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding-left: var(--sidebar-width);
+      }
+
+      .header {
+        left: var(--sidebar-width);
+      }
+
+      .tab-bar {
+        display: none;
+      }
+
+      .sidebar {
+        display: flex;
+      }
+
+      .app-container {
+        padding: calc(var(--header-height) + 16px) 24px 24px;
+      }
+
+      .song-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 16px;
+      }
+
+      .song-item {
+        margin-bottom: 0;
+      }
+
+      .lyrics-container {
+        width: 70%;
+        max-width: 800px;
+      }
+
+      .audio-player audio {
+        width: 80%;
+      }
+    }
+
+    @supports (padding-top: env(safe-area-inset-top)) {
+      body {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: calc(var(--tabbar-height) + env(safe-area-inset-bottom));
+      }
+
+      .header {
+        padding-top: env(safe-area-inset-top);
+        height: calc(var(--header-height) + env(safe-area-inset-top));
+      }
+
+      .tab-bar {
+        padding-bottom: env(safe-area-inset-bottom);
+        height: calc(var(--tabbar-height) + env(safe-area-inset-bottom));
+      }
+
+      .app-container {
+        padding-top: calc(var(--header-height) + env(safe-area-inset-top) + 16px);
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Chœur d'hommes ANDRY</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="#paroles">Paroles</a>
-        </nav>
-    </header>
-    <main>
-        <section id="historique">
-            <h2>Historique de la chorale</h2>
-            <p>Notre chorale, fondée en [année], est un groupe passionné par le chant choral. Depuis sa création à Akany Fitiavana FLM 67Ha, elle réunit des membres dévoués pour partager la musique et la foi à travers des performances vibrantes. [Ajoutez votre historique ici.]</p>
-        </section>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="header-title" id="headerTitle">Chœur d'hommes ANDRY - FLM Toby fanantenana 67ha</h1>
+    <div class="header-actions">
+      <button class="header-btn" id="darkModeToggle" aria-label="Basculer le mode sombre">🌙</button>
+    </div>
+  </header>
 
-        <section id="membres">
-            <h2>Membres de la chorale (20)</h2>
-            <ul class="member-list">
-                <li>Membre 1</li>
-                <li>Membre 2</li>
-                <li>Membre 3</li>
-                <!-- Ajoutez les 17 autres membres ici -->
-                <li>Membre 20</li>
-            </ul>
-        </section>
+  <!-- Sidebar (Desktop) -->
+  <nav class="sidebar">
+    <a href="#" class="sidebar-item active" data-section="paroles" role="button" aria-current="page">🎵 Tonon-kira</a>
+    <a href="about.html" class="sidebar-item" role="button">ℹ️ À propos</a>
+  </nav>
 
-        <section id="bureau">
-            <h2>Membres du bureau</h2>
-            <p>Président : [Nom du président]</p>
-            <p>Secrétaire : [Nom du secrétaire]</p>
-            <p>Trésorier : [Nom du trésorier]</p>
-        </section>
+  <!-- Main content -->
+  <div class="app-container">
+    <!-- Paroles section -->
+    <section id="paroles-section" class="paroles-section">
+      <h2 class="section-title"><span class="icon">🎵</span>Tonon-kira</h2>
+      <div class="search-filter-container">
+        <div class="search-container">
+          <div class="search-icon">🔍</div>
+          <input type="text" class="search-bar" id="search-bar" placeholder="Mitady hira..." aria-label="Rechercher une chanson">
+        </div>
+      </div>
+      <ul class="song-list" id="song-list" role="list">
+        <!-- Les chansons seront ajoutées ici via JavaScript -->
+      </ul>
+      <button class="load-more" id="load-more" style="display: none;">Charger plus</button>
+    </section>
+  </div>
 
-        <section id="chef-choeur">
-            <h2>Chef de chœur</h2>
-            <p>Notre chef de chœur, [Nom du chef], dirige avec passion et expertise, guidant la chorale vers l'excellence musicale.</p>
-        </section>
+  <!-- Tab bar navigation (Mobile) -->
+  <nav class="tab-bar">
+    <a href="#" class="tab-item active" data-section="paroles" role="button" aria-current="page">
+      <span class="tab-icon">🎵</span>
+      <span>Hira</span>
+    </a>
+    <a href="about.html" class="tab-item" role="button">
+      <span class="tab-icon">ℹ️</span>
+      <span>À propos</span>
+    </a>
+  </nav>
 
-        <section id="repetitions">
-            <h2>Répétitions</h2>
-            <p>Les répétitions ont lieu chaque <strong>mardi et jeudi à 18h</strong> à <strong>Akany Fitiavana FLM 67Ha</strong>.</p>
-        </section>
+  <!-- Bouton mode sombre flottant -->
+  <button class="dark-mode-toggle" id="darkModeToggleFloat" aria-label="Basculer le mode sombre">🌙</button>
 
-        <section id="paroles">
-            <h2>Paroles des chansons</h2>
-            <input type="text" id="search-bar" placeholder="Rechercher une chanson...">
-            <div id="error-message">Erreur : impossible de charger les chansons. Vérifiez songs.json.</div>
-            <ul id="song-list"></ul>
-            <div id="lyrics-display">
-                <h3 id="song-title"></h3>
-                <p id="song-lyrics"></p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Ma Chorale - Akany Fitiavana FLM 67Ha</p>
-    </footer>
-    <script>
-        fetch('./songs.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Fichier songs.json non trouvé');
-                }
-                return response.json();
-            })
-            .then(songs => {
-                const songList = document.getElementById('song-list');
-                const lyricsDisplay = document.getElementById('lyrics-display');
-                const songTitle = document.getElementById('song-title');
-                const songLyrics = document.getElementById('song-lyrics');
-                let allSongs = songs;
+  <!-- Modal pour les paroles -->
+  <div class="lyrics-modal" role="dialog" aria-labelledby="lyrics-title">
+    <div class="lyrics-container">
+      <div class="lyrics-header">
+        <h2 class="lyrics-title" id="lyrics-title">Titre de la chanson</h2>
+        <button class="close-lyrics" aria-label="Fermer les paroles">×</button>
+      </div>
+      <div class="lyrics-content">
+        <div class="lyrics-text" id="lyrics-text">Paroles de la chanson...</div>
+      </div>
+      <div class="audio-player">
+        <audio id="songAudio" controls>
+          <source src="" type="audio/mpeg">
+          Votre navigateur ne supporte pas l'élément audio.
+        </audio>
+        <div class="speed-controls" id="speedControls">
+          <button class="speed-btn" id="speedIncrease">+</button>
+          <button class="speed-btn" id="speedDecrease">-</button>
+          <span id="playbackRateDisplay">1,0x</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                function displaySongs(songsToShow) {
-                    songList.innerHTML = '';
-                    songsToShow.forEach(song => {
-                        const li = document.createElement('li');
-                        li.className = 'song-item';
-                        li.textContent = song.title;
-                        li.onclick = () => {
-                            songTitle.textContent = song.title;
-                            songLyrics.innerHTML = song.lyrics.replace(/\n/g, '<br>');
-                            lyricsDisplay.style.display = 'block';
-                        };
-                        songList.appendChild(li);
-                    });
-                }
+  <script>
+    // Données
+    let allSongs = [];
+    let currentPage = 1;
+    const songsPerPage = 20;
 
-                displaySongs(allSongs);
+    // Éléments du DOM
+    const songListElement = document.getElementById('song-list');
+    const searchBar = document.getElementById('search-bar');
+    const loadMoreBtn = document.getElementById('load-more');
+    const lyricsModal = document.querySelector('.lyrics-modal');
+    const lyricsTitle = document.getElementById('lyrics-title');
+    const lyricsText = document.getElementById('lyrics-text');
+    const songAudio = document.getElementById('songAudio');
+    const closeLyricsBtn = document.querySelector('.close-lyrics');
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const darkModeToggleFloat = document.getElementById('darkModeToggleFloat');
+    const speedControls = document.getElementById('speedControls');
+    const speedIncreaseBtn = document.getElementById('speedIncrease');
+    const speedDecreaseBtn = document.getElementById('speedDecrease');
+    const playbackRateDisplay = document.getElementById('playbackRateDisplay');
+    const sections = document.querySelectorAll('.paroles-section');
+    const tabItems = document.querySelectorAll('.tab-item[data-section], .sidebar-item[data-section]');
 
-                document.getElementById('search-bar').addEventListener('input', (e) => {
-                    const searchTerm = e.target.value.toLowerCase();
-                    const filteredSongs = allSongs.filter(song => 
-                        song.title.toLowerCase().includes(searchTerm)
-                    );
-                    displaySongs(filteredSongs);
-                });
-            })
-            .catch(error => {
-                document.getElementById('error-message').style.display = 'block';
-                console.error('Erreur:', error);
-            });
-    </script>
+    let playbackRate = 1.0;
+
+    // Charger les chansons depuis le fichier JSON
+    async function loadSongs() {
+      try {
+        const response = await fetch('songs.json');
+        if (!response.ok) throw new Error(`Erreur HTTP! Statut: ${response.status}`);
+        allSongs = await response.json();
+        console.log('Songs loaded:', allSongs);
+        localStorage.setItem('cachedSongs', JSON.stringify(allSongs));
+        localStorage.setItem('lastUpdated', Date.now());
+        renderSongs(allSongs.slice(0, songsPerPage));
+        updateLoadMoreButton();
+      } catch (error) {
+        console.error("Erreur de chargement des chansons:", error);
+        const cachedSongs = localStorage.getItem('cachedSongs');
+        if (cachedSongs) {
+          allSongs = JSON.parse(cachedSongs);
+          console.log('Using cached songs:', allSongs);
+          renderSongs(allSongs.slice(0, songsPerPage));
+          updateLoadMoreButton();
+        } else {
+          showNoResultsMessage(songListElement);
+        }
+      }
+    }
+
+    // Afficher les chansons
+    function renderSongs(songList, append = false) {
+      if (!append) songListElement.innerHTML = '';
+      if (!songList || songList.length === 0) {
+        showNoResultsMessage(songListElement);
+        return;
+      }
+
+      const sortedSongs = [...songList].sort((a, b) => a.title.localeCompare(b.title));
+      sortedSongs.forEach(song => {
+        const li = document.createElement('li');
+        li.className = 'song-item';
+        li.setAttribute('role', 'listitem');
+        li.innerHTML = `
+          <div class="song-header">
+            <div class="song-play-icon">▶</div>
+            <div class="song-title">${song.title}</div>
+          </div>
+        `;
+        li.querySelector('.song-play-icon').addEventListener('click', () => {
+          openLyricsModal(song.title, song.lyrics || "Tsy misy tononkira", song.audioUrl || song.audio || "");
+        });
+        songListElement.appendChild(li);
+      });
+    }
+
+    // Afficher un message quand aucun résultat
+    function showNoResultsMessage(element) {
+      element.innerHTML = '<div class="no-results">Tsy misy hira hita</div>';
+    }
+
+    // Ouvrir le modal des paroles
+    function openLyricsModal(title, lyrics, audioUrl) {
+      lyricsTitle.textContent = title;
+      lyricsText.textContent = lyrics;
+      if (audioUrl) {
+        songAudio.src = audioUrl;
+        songAudio.style.display = 'block';
+        songAudio.playbackRate = playbackRate;
+        songAudio.loop = true; // Boucle activée par défaut
+        speedControls.style.display = 'flex'; // Afficher les contrôles de vitesse
+      } else {
+        songAudio.style.display = 'none';
+        speedControls.style.display = 'none'; // Cacher les contrôles sans audio
+      }
+      playbackRateDisplay.textContent = `${playbackRate.toFixed(1)}x`;
+      lyricsModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      lyricsModal.focus();
+    }
+
+    // Fermer le modal des paroles
+    function closeLyricModal() {
+      lyricsModal.classList.remove('active');
+      document.body.style.overflow = '';
+      songAudio.pause();
+      searchBar.focus();
+    }
+
+    // Contrôler la vitesse de lecture
+    function adjustPlaybackRate(amount) {
+      if (songAudio.src) {
+        playbackRate = Math.max(0.5, Math.min(2.0, playbackRate + amount));
+        songAudio.playbackRate = playbackRate;
+        playbackRateDisplay.textContent = `${playbackRate.toFixed(1)}x`;
+        console.log(`Playback rate set to: ${playbackRate}x`);
+      }
+    }
+
+    // Recherche de chansons
+    function searchSongs() {
+      const searchTerm = searchBar.value.toLowerCase();
+      const filteredSongs = allSongs.filter(song =>
+        song.title.toLowerCase().includes(searchTerm) ||
+        (song.lyrics && song.lyrics.toLowerCase().includes(searchTerm))
+      );
+      console.log('Filtered songs:', filteredSongs);
+      currentPage = 1;
+      renderSongs(filteredSongs.slice(0, songsPerPage));
+      updateLoadMoreButton();
+    }
+
+    // Mettre à jour le bouton "Charger plus"
+    function updateLoadMoreButton() {
+      const totalSongs = searchBar.value
+        ? allSongs.filter(song =>
+            song.title.toLowerCase().includes(searchBar.value.toLowerCase()) ||
+            (song.lyrics && song.lyrics.toLowerCase().includes(searchBar.value.toLowerCase()))
+          ).length
+        : allSongs.length;
+      loadMoreBtn.style.display = currentPage * songsPerPage < totalSongs ? 'block' : 'none';
+    }
+
+    // Charger plus de chansons
+    function loadMoreSongs() {
+      currentPage++;
+      const filteredSongs = searchBar.value
+        ? allSongs.filter(song =>
+            song.title.toLowerCase().includes(searchBar.value.toLowerCase()) ||
+            (song.lyrics && song.lyrics.toLowerCase().includes(searchBar.value.toLowerCase()))
+          )
+        : allSongs;
+      renderSongs(filteredSongs.slice(0, currentPage * songsPerPage), true);
+      updateLoadMoreButton();
+    }
+
+    // Changer de section
+    function switchSection(section) {
+      sections.forEach(s => s.style.display = s.id === `${section}-section` ? 'block' : 'none');
+      tabItems.forEach(t => t.classList.toggle('active', t.dataset.section === section));
+      console.log('Switching to section:', section);
+      renderSongs(allSongs.slice(0, currentPage * songsPerPage));
+    }
+
+    // Mode sombre
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDarkMode = document.body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDarkMode);
+      darkModeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+      darkModeToggleFloat.textContent = isDarkMode ? '☀️' : '🌙';
+    }
+
+    // Initialisation
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('Initializing page');
+      loadSongs();
+      searchBar.addEventListener('input', searchSongs);
+      loadMoreBtn.addEventListener('click', loadMoreSongs);
+      closeLyricsBtn.addEventListener('click', closeLyricModal);
+      lyricsModal.addEventListener('click', (e) => {
+        if (e.target === lyricsModal) closeLyricModal();
+      });
+
+      speedIncreaseBtn.addEventListener('click', () => adjustPlaybackRate(0.25));
+      speedDecreaseBtn.addEventListener('click', () => adjustPlaybackRate(-0.25));
+
+      tabItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault();
+          switchSection(item.dataset.section);
+        });
+      });
+
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.textContent = '☀️';
+        darkModeToggleFloat.textContent = '☀️';
+      }
+
+      darkModeToggle.addEventListener('click', toggleDarkMode);
+      darkModeToggleFloat.addEventListener('click', toggleDarkMode);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lyricsModal.classList.contains('active')) {
+          closeLyricModal();
+        }
+      });
+    });
+  </script>
 </body>
-</html>
+</html>tex
