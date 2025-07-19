@@ -1,28 +1,268 @@
 [
-    { "title": "Avia Fanahy", "lyrics": "Paroles à insérer ici..." },
-    { "title": "omeo hery", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Nao lahy", "lyrics": "Paroles à insérer ici..." },
-    { "title": "izaho irery", "lyrics": "Paroles à insérer ici..." },
-    { "title": "2e Consolation", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Isaorana", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Isaoranay anao", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Omeo tso-drano", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Tendry", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Ny fitiavan'ny Jeso", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Vavaka", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Ny lalanao Jesosy", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Tompo ô! Fantatrao", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Fanantenanako", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Inty aho", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Izaho irery", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Voaloboka", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Ny Fitiavanao anay", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Ilaiko ny Fitiavanao", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Izy", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Telo izay iray", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Manao azafady", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Raha Tonga anio", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Masina", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Eo am-pelatananao", "lyrics": "Paroles à insérer ici..." },
-    { "title": "Eza anao", "lyrics": "Paroles à insérer ici..." }
+  {
+    "title": "Avia Fanahy",
+    "lyrics": "1. Avia Fanahy masina\nMidina aminay\nFenoy ny hery avy aminao\nizao mpanomponao izao\n\nRef : Tongava mba hanavao indray\nNy ao anatinay\nKa ho Tanteraka tokoa\nIzay sitraky ny Ray\n\n2. Ô! Hafanao ny ao am-po\nMba hahay misaotra anao\nKa ny asa izay atombokay\nho vitanay Tokoa",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+  "title": "Omeo hery",
+  "lyrics": "1. Reharehanay bevata,\nMijoro magnanao\nRay an-danitsao eh!\nFa nomenao Fitahia\nVo hery sy tanjake!\nHampandroso ty fanjakanao eh!\nNdra nandalo raha maro\nTsy mihozongozoho\nFa mitambatse ho vato\nKa maneho hery raika\nFikambanan-dehilahy e\nMandra-maty io tsy hihemotse\n\nRef : Ny raha angatahinay amignao lahy Jesosiko e!\nAmeo hery zahay, Ameo fo mandefitse\nHahaizanay, hanantateraky ny asa napetrakao\nSakelefo, ambany elatse!\nFa maro loatsy ny fahavalo\nTa handrava agnay an-tagnanao eh!\nFa matoky agnao, Jesosy mpiaro\nMiamby ny aignay, mbe tsy ho lavo\n\n2. Tsy halignonay Nenilava\nNanome tsangam-bato bevata\nAn'i Keradoma Andry e!\nNambaray tamignay fa\n'Nareo no ANDRY iankinan'ny fiagona'\nKa tsy ho folake!\n\nRef : Ny raha angatahinay amignao lahy Jesosiko e!\nAmeo hery zahay, Ameo fo mandefitse\nHahaizanay, hanantateraky ny asa napetrakao\nSakelefo, ambany elatse!\nFa maro loatsy ny fahavalo\nTa handrava agnay an-tagnanao eh!\nFa matoky agnao, Jesosy mpiaro\nMiamby ny aignay, mbe tsy ho lavo", "audioUrl":"https://www.terabox.com/s/https://1024terabox.com/s/17zoAd96fbGF0c-5z9g6L6Q",
+  "tags": []
+},
+  {
+  "title": "Ô ingao",
+  "lyrics": "1. Ô ingao ny hira, miderà\nF'efa afaka heloka ianao\nIlay Jesô voahombo, izay nitsangana\nDia efa nandevona ny otanao\nKoa mitsangàna ry aina vaovao\nF'izy efa niady ho anao\n\nRef : Koa mihirà fandresena\nEnto ny fanevanao\nMba hiharihary ho hitan'olona\nIlay fanavotana efa azonao\nKoa derao Jéhovah ilay nitianao\nKa mijorò vaovao\n\n2. Ka raha ho avy izao, ny farany\nIzay hialanao eto an-tany re!\nDia ity tany feno haratsiana\nSady manimba ny fiainanao\nKoa aza adino fa Jéhovah Ray\nEfa nandray anao\n\nRef : Koa mihirà fandresena\nEnto ny fanevanao\nMba hiharihary ho hitan'olona\nIlay fanavotana efa azonao\nKoa derao Jéhovah ilay nitianao\nKa mijorò vaovao",
+  "audioUrl": "",
+  "tags": []
+},
+{
+  "title": "Tsy mba misy",
+  "lyrics": "Tsy mba misy Fanantenana\nRaha tsy ao aminao ry Tompo\nNa ho voky na ho noana\nTsy handà ny fanomponanao\n\nHira, Hira Fifaliana\nAntsa, Antsa Fiderana\nNo asandratray ho anao ry Tompo\nÔ raiso re ny vavakay",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+  "title": "Nao lahy",
+  "lyrics": "1. (Nao lahy Jesosiko e\nZoky mpandrobaka e\nMikaiky anao lahy fa lavidavitse\nNy lalà andehagnanay) x2\n\nRef : Matoky magnanao zahay Jesosy\nTsy matahotse raha maro fa amignao\nAndeso an-tagna ahay\nFa mitsaky rano lalike\nManepotse ro misy biby mandrapake\n\n2. Kenda aho Jesosiko\nAnivon-drano ka sepotse\nMikaiky anao lahy fa lavidavitse\nNy lalà andehagnanay\n\nRef : Matoky magnanao zahay Jesosy\nTsy matahotse raha maro fa amignao\nAndeso an-tagna ahay\nFa mitsaky rano lalike\nManepotse ro misy biby mandrapake",
+  "audioUrl": "https://www.terabox.com/s/votreLienUnique",
+  "tags": []
+},
+  {
+    "title": "izaho irery",
+    "lyrics": "Hoy Jehovah Tompon'ny Maro\nAndriamanitry ny Israely\n\"Aza manana Andriamanitra hafa, fa Izaho ihany\"\nIzaho Irery\nF'izy irery ihany no mpamonjy\nIlay Maharitra Mandrakizay\nFa ny zavatry ny tany dia tsy maintsy ho loa ihany\nHo loa ihany\n\n(Na izao na ianao\nSamy asan'ny tanàny\nKoa tsarovy ny avotra efa vitany\nTao Kalvary) x2\n\nHoy Jehovah Tompon'ny Maro\nAndriamanitry ny Israely\n\"Aza manana Andriamanitra hafa, fa Izaho ihany\"\nIzaho Irery\nF'izy irery ihany no mpamonjy\nIlay Maharitra Mandrakizay\nFa ny zavatry ny tany dia tsy maintsy ho loa ihany\nHo loa ihany",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "2e Consolation",
+    "lyrics": "1. Ry Ray ô! Mifona ity zanakao maditra\nFa folan'ny ady sy loza marobe\nFa neniko mantsy ny ditra vita Ray ô\nHiezaka aho, ka hody an-tranonao ! x2\n\nRay ô! Tsilovinao ny lalany\nAn'ivon'ny ala mahatahotra\nTsy ny sitrapoko anefa no atao\nFa izay sitrakao, Ray malala ô!",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Isaorana",
+    "lyrics": "1. Isaorana Andriamanitray\nFa lehibe tokoa, tsy manam-paharoa\nIlay fitiavana nasehony\nNafoiny ho anao, ny zanany\nHo famonjena anao\nHo anao ry olom-bery ô!\n\n2. Derao, ankalazao Jesosy Tomponao\nMpanavotra anao, mpamela heloka\nFiadanana izao no hatolony\nHo antsika olony, mpanoa ny teniny\nMpanao sitrany\nHo fiainana mandrakizay\n\n3. Voninahitra ho an'Andriamanitra\nBe fahasoavana,\nIlay Tompo iray Tsitoha, mpamindrafo\nNomeny ho anao izao ny fanahiny\nKa raisonao izao, Fanahy masina\nHiasa ao aminao\nHanao ny sitraky ny Ray",
+    "audioUrl": "",
+    "tags": []
+  },
+ {
+  "title": "Isaoranay anao",
+  "lyrics": "1. Misaotra anao izahay\nRy Andriamanitray\nFa mbola nomenao\nIzao talenta izao\nKa afaka mitory sy\nMidera anao izahay\nNy androm-piananay\nAtokonay ho anao\n\n2. Ny voady izay natao\nTeo anatrehanao\nNy fonay ho anao\nHanoa ny sitrakao\nHitory sy ankalazanao\nNo antom-piananay\nTsy hivadika aminao\nMandrakizay doria\n\n3. Mivavaka izay\nHasandratra aminao\nNy hanomezanao\nIzay mahasoa anay\nKa n'aiza aiza alehanay\nTsimbinonao izahay\nMba ho mpandresy\nToa anao izahay",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+    "title": "Omeo tso-drano",
+    "lyrics": "1. Handeha lavitra\nHamakivaky lohasaha izahay e!\nTany efitra maro fandrika\nNo alehanay\nFa ny tananao nisy olatra no itokianay e\nFa hiaro anay amin'ny lalana alehanay\n\nRef: Omeo! Omeo tso-drano\nRaha sitrakao e!\nOmeo! Omeo tso-drano\nIzahay fa andeha\n\n2. Fa fanilonay manazava ny lalanay\nNy teninao e !\nHery mampiray, mandrakizay\nHo mandrakizay\nTsy kivy re ny fo refa eo ianao Jesô\nMiaro anay e !\nTretrika tokoa mandrakizay\n(Omeo) x3\n\nRef: Omeo! Omeo tso-drano\nRaha sitrakao e!\nOmeo! Omeo tso-drano\nIzahay fa andeha\n\n(Omeo) x8",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Ny fitiavan'ny Jeso",
+    "lyrics": "1. Fa ny fitiavany ahy, hafa tsy toa an'ny olona rehetra\nTsy be rehareha, tsy mba manam-petra\nFitia tia manavotr'aina sy manao\nManome endrika afo\nTsy fahitanao\nFa ny anao tokoa, Fitiavana no lehibe indrindra\nNy fitiavanao mahagaga tsy miova tsy mifindra\nIo no mbola hanasoavanao anay\nIsan'andro isan'andro\nOmaly, anio ary mandrakizay\n\nRef : Ny fitiavan'i Jesô!\nTsy manam-paharoa\nNy fitiavan'i Jesô!\nLehibe tokoa\nNy fitiavan'i Jesô\nFeno fahalalana\nNy fitiavan'i Jesô\nMisy fanantenana\n\n2. Fa ny fitiavany ahy, hafa tsy toa an'ny olona rehetra\nTsy be rehareha, tsy mba manam-petra\nFitia tia manavotr'aina sy manao\nManome endrika afo\nTsy fahitanao\nFa ny anao tokoa, Fitiavana no lehibe indrindra\nNy fitiavanao mahagaga tsy miova tsy mifindra\nIo no mbola hanasoavanao anay\nIsan'andro isan'andro\nOmaly, anio ary mandrakizay\n\nRef : Ny fitiavan'i Jesô!\nTsy manam-paharoa\nNy fitiavan'i Jesô!\nLehibe tokoa\nNy fitiavan'i Jesô\nFeno fahalalana\nNy fitiavan'i Jesô\nMisy fanantenana\n\n3. Fa ny fitiavan'ilay Avo\nFitia Agape\nTsy takatry ny saina fa\nTena lehibe\nFitia tsy mety leo\nTsy mety potika\nFa mahery\n\nRef : Ny fitiavan'i Jesô!\nTsy manam-paharoa\nNy fitiavan'i Jesô!\nLehibe tokoa\nNy fitiavan'i Jesô\nFeno fahalalana\nNy fitiavan'i Jesô\nMisy fanantenana",
+    "audioUrl": "",
+    "tags": []
+  },
+{
+  "title": "Ento aho",
+  "lyrics": "1. Ento aho any aminao,\nRy Jesosy tia ô!\nFa ianao dia tsy mandao\nIzay rehetra tia anao\nEnto ho aho any aminao\nRy Jesosy tia ô!\nFa ianao dia tsy mandao\nIzay rehetra tia anao\n\nRef : Ento aho ho any aminao\nRy Jesosy tia ô!\nRy Jesosy ento ho anao\nFa ianao dia tsy mandao\nIzay rehetra tia anao\nEnto aho ho any aminao\n\n2. Aza avela handeha irery\nKa ho rembim-bibidia\nFa ny tananao mahery\nNo aoka hiaro tsy hania\nMarobe ireo fahavalo\nIzay mikendry ny hahavoa\nFa ianao dia tsy mimalo\nRy Andriamanitra tsitoha\n\nRef : Ento aho ho any aminao\nRy Jesosy tia ô!\nRy Jesosy ento ho anao\nFa ianao dia tsy mandao\nIzay rehetra tia anao\nEnto aho ho any aminao\n\n3. Eo an-tananao ny aiko\nNo ankiniko izao\nTeninao no ho lalaiko\nIzay dia ampy hanavao\nDera, laza, saotra, hery\nNo atolotro izaho\nRy Andriamanitra mahery\nRaiso aho ho zanakao",
+  "audioUrl": "",
+  "tags": []
+},
+{
+  "title": "Fagnahy loham-pary",
+  "lyrics": "1. Ehe! Ka magnao fanahy loham-pary eny tsika\nHay moa! Tsika lohany ko ro hatsatso\nFitaratse ho entehin'ny hafa\nTsika mpivavake!\nLaha misy amintsika,\nLaha sefon-dekipa amin'ny raty atao ambalik'any e!\nMivony an-drapasy e!\nHalignony e! Fa ty vatany e\nNamboarin-dragnahary e\nFiangonan-dragnahary e\n\nRef : Hialao, hialao zaka raty e\nHialao fa tsy mety e! Tsy magneva\nFa tsy tsika mpitarike\nNo hampilitsy an-davake\nMamita-bata nao rolahy!\nOvao ovao manomboko androany\nNy an-draha raty fa tsy soa\nFa tsika mpivavake, no atokisan'i Jeso\nHalan'olo tahake!\n\n2. Eka, olombelo tsy maintsy manota\nFe tsy hararaoty ty famindrampony\nTsy atao zatsy ty raha raty e!\nFa mandetiky an-dalike\nTaranak'Adama, Tsy mahay tsy manota\nFa diovy isan'andro amin'ny ràn'ny Tompo\nManasa ny loto,\nVilin-dràny, tsika mpivavake\nKa sarobily anamigny e!\nMamigny, tena mamigny e!",
+  "audioUrl": "",
+  "tags": []
+},
+ {
+  "title": "Tendry",
+  "lyrics": "1. (Trendrin'i Tompo izahay)\nHizara hafaliana ho anao\n(Trendrin'i Tompo izahay)\nHizara fifaliana ho anao\n(Trendrin'i Tompo izahay)\nHizara ny fiadanana ho anao\n(Trendrin'i Tompo izahay)\nHizarana ny hazavana ho anao\n\nRef : (Fa ny tenin'i Tompo\nNo hoentiko ho anao\nHanova ny fiainanao\nHo vaovao) x2\n\n2. Ny Tompo tsy mba miangatra\n(Fa tia anao)\nMiandry fotsiny izy\n(koa asakasakao)\nKa mandraisa azy ianao\n(Fa ho hitanao ho olom-baovao) x2\n\nRef : (Fa ny tenin'i Tompo\nNo hoentiko ho anao\nHanova ny fiainanao\nHo vaovao) x2",
+  "audioUrl": "",
+  "tags": []
+},
+{
+  "title": "Mba tariho",
+  "lyrics": "(Mba tarihonao ry Jesô ny saiko,\nNy fanahy sy ny foko re!\nMba ho tena tia anao\nKa tsy hahafoy anao,\nSy ho tena iray aina aminao) x2\n\n(Ny foko Jesô!\nTano ho anao, fa tsy mahasaraka anao\nHifikitra ao aminao\nRaiso ny foko ao aminao) x2",
+  "audioUrl": "",
+  "tags": []
+},
+ {
+  "title": "Misaotra anao",
+  "lyrics": "1. Fony aho very\nNotadiavinao\nIzaho nitoetra irery\nTsy nilaozanao\nRaha naloto aho\nNodiovinao\nHe! Mpanota aho\nNohamasininao\n\nRef : Misaotra anao aho Tompo!\nNohon'ny fahasoavanao\nZ'inona moa izahay, mpanompo\nNo hiray latabatra aminao\n\n2. Rony hadisoako voavelanao\nAry ny aty foko no honenanao\nIzaho tsy mba marina\nNohamarininao\nLavo aho tafarina\nTompo noho ianao\n\nRef : Misaotra anao aho Tompo!\nNohon'ny fahasoavanao\nZ'inona moa izahay, mpanompo\nNo hiray latabatra aminao\n\n3. Tokiko hatrany ny fitiavanao\nFaniriako izany\nKa mba tanteraho\nNefa izaho irery osa lava izao\nTsy mba ampy hery\nK'aza ilaozanao\n\nRef : Misaotra anao aho Tompo!\nNohon'ny fahasoavanao\nZ'inona moa izahay, mpanompo\nNo hiray latabatra aminao\n\nAmpianaro aho Tompo\nHahay mietry to anao\nZ'inona mo izahay mpanompo\nNo hiray latabatra aminao",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+  "title": "Vaovao mahafaly ",
+  "lyrics": "1. Vaovao mahafaly lazaiko anao\nTonga eto anio ilay Tomponao\nIzay mitondra famonjena\nHo an'ireo izay mahonena\n\nRef : Ka mihobia, sy miderà\nFa izy no fiainam-baovao\nHo ahy sy ho anao, ho antsika izao\nHo an'ireo izay mitalaho\n\n2. Vaovao mahafaly lazaiko anao\nTonga eto anio ilay Tomponao\nIzay mitondra famonjena\nHo an'ireo izay mahonena\n\nRef : Ka mihobia, sy miderà\nFa izy no fiainam-baovao\nHo ahy sy ho anao, ho antsika izao\nHo an'ireo izay mitalaho\n\n3. Ho antsika rehetra izay mpanota\nAza mangatak'andro ianao\nFa famonjena be mihavosa\nNo ho azoko sy ho azonao\nRaha mitalaho\n\nRef : Ka mihobia, sy miderà\nFa izy no fiainam-baovao\nHo ahy sy ho anao, ho antsika izao\nHo an'ireo izay mitalaho",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+  "title": "Hitory ny anaranao",
+  "lyrics": "1. Vognono izahay Jesosy ô\nHandeha hitory ny anaranao\nN'aiza n'aiza no aleha\nZahay tsy hihemotra fa andeha\nHanambara ny fitiavanao\n\nRef : Hitory ny anaranao ô\nAmin'ny rahalahiko aho\nNa zôvy ndreky hisompatra\nLoso miha arô zahay\nTsy himpodipody afara reky e\n\n2. Tsy menatran'ny filazantsara aho\nFa herin'Andriamanitra\nHo fahendren'izay mino zegny\nAmin'ny jiosy aloha,\nVao amin'ny jentilisa koa",
+  "audioUrl": "",
+  "tags": []
+},
+  
+   {
+  "title": "Tsy mataho-draha",
+  "lyrics": "1. (Elan'ela bevata,\nNy lanitray eroy, vo ny tany etoy\nMagnao tsy ho hitan-dranahary\nLaha magnao izay tiagny atao e!\nNy olo toy tsy mataho-draha) x2\nMagnao Ndranahary izao tsy misy\nNdra ny toriteny ataogny venjy\nMbokany fa hoe tse zao,\nFa nenay nenay avao\n\nRef : Longoko, mitahòa fa hain-drananahary e!\nIo raty fiatanao, mandiniha, mieritrereta fa\nTsy halombanao an-tagnany toy\nOvay de mbola eto ny fombagnao\n\n2. Maromaro ny niala nao zao\nTsy mahita ny toy fa\nFandaniam-potoa hoy ty fivavaha\nFanamboka tsy hay volagny\nLaha manompo foto-kily e\nOlo toy, tsy mataho-draha\nMagnao Ndranahary izao tsy misy\nNdra ny toriteny ataogny venjy\nMbokany fa hoe tse zao,\nFa nenay nenay avao\n\nRef : Longoko, mitahòa fa hain-drananahary e!\nIo raty fiatanao, mandiniha, mieritrereta fa\nTsy halombanao an-tagnany toy\nOvay de mbola eto ny fombagnao",
+  "audioUrl": "",
+  "tags": []
+},
+  
+  {
+  "title": "Ny lalanao Jesosy",
+  "lyrics": "1. Ny lalanao Jesosy, vitsy mpahalala\nSarotra sy ety, mila fankatoavana\nMamaky ranomaso, mizàka fahoriana\nHitondra fiadanana, Fianana mandrakizay\n\nRef : Jesosy, ampio re! Izahay mpianatrao\nMba ho mpandresy ety am-pandehanana\nNa sarotra aza re ny dia, Tsy ho reraka izahay\nHombanay ianao Kristy, n'aiza n'aiza alehanay\n\n2. Tsy maintsy ko milanja, ny hazofijaliana\nNozakain'i Tompo, hanavotany anao\nNanaiky tsy an-tery, nandao ny voninahiny\nVonjeo re! Ny olonao, tsy hisaraka aminao",
+  "audioUrl": "",
+  "tags": []
+},
+    { 
+    "title": "Ny lalanao Jesosy", 
+    "lyrics": "Paroles à insérer ici...",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+  "title": "Ry Jesosy ô , malala",
+  "lyrics": "1. Ry Jesosy ô malala,\nIndro ny mpanomponao\nMba tariho halala\nNy mangidy nentinao\nNy tontolo e! Nangina\nSina, tsy namoaka feo\nIreo mpianatra sondriana\nToa natory, toa tsy teo\n\n2. Nao Jesosy Ragnadria\nToa nampianatsao\nTano an-tagna tsy hoa sia\nAmpiliro am-balanao\n\nNy aota lova ela\nNo mandrabe ny olonao\nFe re raty tsy mbo mela\nNao Jesosy, mba tahao",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+  "title": "Alléluia",
+  "lyrics": "Ref : Alleloia, Alleloia\nAsandrato avo re ny feo!\nAlleloia, Alleloia\nIzay no hanasanay anareo\n\n1. Zao no andro fifaliana\nSy natao ho fihobiana\nKa ny feo no ataovy mafy\nHo fiderana ho an'ny Avo\n\nRef : Alleloia, Alleloia\nAsandrato avo re ny feo!\nAlleloia, Alleloia\nIzay no hanasanay anareo\n\n2. Fifaliana no anton'izao\nKa fiderana no andeha atao\nHiara-hidera sy hiantsa\nAn'ilay Avo, izay niantso\n\nRef : Alleloia, Alleloia\nAsandrato avo re ny feo!\nAlleloia, Alleloia\nIzay no hanasanay anareo",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+  "title": "Fitiavana ho anao",
+  "lyrics": "Nitomany, nijaly\nNitondra fahoriana, nalatsaka ny ràny\nIlay Jesosy izay nanolotra ny ainy\nTeo ambonin'ny hazofijaliana\n\nToy ny voro mahery niakatra avo\nIlay fanahiny Jesô nandao ny vatany\nMaty ny Tompo\nNitaraina ny tany\nNohon'ny fitiavany ahy sy anao\n\nToy ny voro mahery niakatra avo\nIlay fanahiny Jesô nandao ny vatany\nMaty ny Tompo\nNandao ny voninahiny\nNohon'ny fitiavany ahy sy anao",
+  "audioUrl": "",
+  "tags": []
+},
+    {
+    "title": "Vavaka",
+    "lyrics": "1. Tompo ô tahio\nIzao fiainanay izao\nFa mahantra tokoa\nLavitra anao\nNy asa ratsy mihavosa\nIzahay Mihavosa\nKa mangataka aminao\nMba Hamindranao Fo!\n\nRef : Ianao no fanantenana\nAzo antoka fa hitàna\nIanao no hany hery andry ho anay\nKa fenoy ny tsirairay\nHampajakao ny fanahy\nDia hiadana mandrakizay\n\n2. Tompo ô tahio\nIzao fiainanay izao\nFa mahantra tokoa\nLavitra anao\nNy asa ratsy mihavosa\nIzahay Mihavosa\nKa mangataka aminao\nMba Hamindranao Fo!\n\nRef : Ianao no fanantenana\nAzo antoka fa hitàna\nIanao no hany hery andry ho anay\nKa fenoy ny tsirairay\nHampajakao ny fanahy\nDia hiadana mandrakizay",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Ny lalanao Jesosy",
+    "lyrics": "1. Ny lalanao Jesosy\nVitsy mpahalala\nSarotra sy ety\nMila fankatoavana\nMamafy ranomaso\nMizaka fahoriana\nMitondra fiadanana\nFiainana mandrakizay\n\nRef : Jesosy ô, ampio re !\nIzahay mpianatrao\nMba ho mpandresy\nEty am-pandehanana\nNa sarotra aza re ny dia,\nTsy ho reraka izahay\nMombanay ianao Kristy ô\nN'aiza n'aiza alehanay\n\n2. Tsy maintsy koa milanja\nNy hazofijaliana\nNozakain'ny Tompo\nHanavotany anao\nNanaiky tsy an-tery\nNandao ny voninahiny\nVonjeo re, ny olonao\nTsy hisaraka aminao",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Tompo ô! Fantatrao",
+    "lyrics": "1. Tompo ô Fantatrao,\nMalemy tokoa izao izaho\nNofo aman-drà fa tsy anjely\nTsy mendrika anao velively\nTompo fantatrao, ny ota ao anatiko ao\nLoto mameno ny foko,\nNy fahelemen'ny finoako) x2\n\n2. Kanefa Tompo ô, kanefa Tompo ô\nNy fanahinao manazava\nNy tahotro hisava\nNomenao fahasoavana,\nNoraisinao ho havana\nNy teninao no toky ho ahy\nHitarika ho sahy\nHanatona anao, hanaraka anao\nHanaradia anao, hatramin'izao\n\n(Ko diovy, Hamasino\nHamarino aho) x2",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+  "title": "Fanantenanako",
+  "lyrics": "1. Na maizina aza Jesô!\nNy lalako ety dia\nMbola mihira Jesô!\nSatria ianao Tompoko\nNa maloka aza Jesô!\nNy androko ety dia\nMbola mitsika aho Jesô\nSatria ianao tokiko\n\nRef : Fanantenako ianao\nRy Jesô tia\nHo faly aho\nAkaikinao mandrakizay\n\n2. Na lavitra aza Jesô\nIry tany iry dia\nMbola tsy kivy ny fo\nSatria ianao heriko\nNa mafy aza Jesô\nNy zava-manjo dia\nMbola mitraka ao Jesô\nSatria ianao amiko\n\nRef : Fanantenako ianao\nRy Jesô tia\nHo faly aho\nAkaikinao mandrakizay",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+    "title": "Inty aho",
+    "lyrics": "1. Tonga ho anay ianao\nMaty ho anay ianao\nInty aho ry Tompo ho anao\nManolo-tena izaho ho anao\n\nRef : Ô! inty aho,\nho anao izao, ny tenako\nNy fo, fanahy, ny aiko\nInty aho, ho anao izao\n\n2. Iza hoy ianao no Tompo\nHanavotra anay izao\nKoa hamafisoa ary ny Finoana\nDia Torio izao tontolo izao",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Golgota",
+    "lyrics": "(Ô banjinonao, Golgota re\nIlay toerana nitete ny ràn'ny Tomponao\nTao no nanekeny hanadiovany\nLay entana nanavesatra ny fonao) x2\n\n(Koa mifalia fa madio ianao\nNoho ilay Jesosinao\nGolgota re! Tsy hoadinoko izao\nMandrakizay doria) x2",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Voaloboka",
+    "lyrics": "1. Jesô tia, ianao no andrinay\nTsy misy aizina ety,\nRaha miray aminao izahay,\nTompo soa, ianao no tokinay\nMazava ny lalanay ety\nRaha miray aminao izahay\nIanao Jesô voalobaka,\nIanao Jesô, no mofon'aina\nIzahay no sampana\nTsy ho velona raha tsy eo aminao\n\nRef: Ho aiza moa, izahay Jesô\nEo aminao, ny teny soa\nFiainana mandrakizay\nNomenao, nomenao ho anay\n\n2. Ianao Jesô, voalobaka\nIanao Jesô no mofon'aina\nIzahay no sampana\nTsy ho velona raha tsy eo aminao\n\nRef: Ho aiza moa, izahay Jesô\nEo aminao, ny teny soa\nFiainana mandrakizay\nNomenao, nomenao ho anay",
+    "audioUrl": "",
+    "tags": []
+  },
+{
+  "title": "Ny Fitiavanao anay",
+  "lyrics": "1. Tonga ho anay ianao\nHanafaka anay\nAmin'ireo ozona\nMangeja sy mamatotra\n\nRef : Misaotra anao izahay\nLehibe tokoa ny fitiavanao\nNafoinao ny ainao\nHanavotra anay\nMisaotra anao izahay\nLehibe tokoa ny fitiavanao\nKa midera anao izahay\n\n2. Maty ho anay anao\nMba hanadio anay\nNovoina ianao\nHo fanavotana anay\n\nRef : Misaotra anao izahay\nLehibe tokoa ny fitiavanao\nNafoinao ny ainao\nHanavotra anay\nMisaotra anao izahay\nLehibe tokoa ny fitiavanao\nKa midera anao izahay",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+    "title": "Ilaiko ny Fitiavanao",
+    "lyrics": "1. Mamy loatra ilay fitiavanao\nNatolotrao hatramizay ka hatram'izao\nMpanota f'io tsy mba nosintoninao\nFa nomenao tsy nasianao nenina\nFantatrao ny fahaditrako\nTsy nijery, ninia nikipy\nTamin'indrafo tsy hay faritana\nIvalozako eto ireo, tsy hamerina intsony\nFa ampy izay raha ny hamafisam-po\n\n2. Olombelona ihany aho mpanomponao\nMitafy nofo tsy manan-tsombi-kery\nMora voataona ny ratsy manondidina\nManingotra aina mamely ny fanahy\nMahatoky nefa, ianao ry Tompo\nIzay efa niantso tamim-pitiavana\nTsy hampangina ny feo, mibitsika manao hoe\nMombanao aho, mombanao ny tanako\n\nK'aza avela hiloam-pahotana, aza avela hanao adalana\nAza avela, aza avela, aza avela Tompo ô!\nRaha mila ho resim-pakam-panahy\nHanehoy ny fitiavanao\nAmpy ahy izay\nHanovozako hery vao",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Izy",
+    "lyrics": "1. Be voninahitra eo amin'ny fitoerany\nIlay Andriamanitry ny Israely\nSady eo amin'ny fahalebiazany\nTompon'ireo anjely\nIzy dia eo am seza fiandriananany\nMifehy ireo hareny\nManjaka ao an-dapany\nMbanin'ny zanany sy ny fanahiny\n\nRef: Mpanjaka ianao, Tompo ianao\nIlay avo indrindra, El-Hoïm\nMahery ianao, Tsitoha ianao\nLay hatrizay El-Shadaï\n\n2. Azy ny lanitra sy ny tany\nSy izay rehetra eo aminy\nna ny ambony na ny ambany\nDia samy anjakany\nNy fahefany tsy hay lazaina\nNy fahamarinany tsy hay refesina\nNy fahagagany tsy mety lany\nNy fanjakany tsy hay resena\n\n3. Mpanao ny zavatra rehetra\nMpanao ny tsara rehetra\nMpanao ny hita na ny tsy hita\nSy izay tsy voatanisa\nAzy ny famelana\nRain'ny Fahazavana\nRain'ny fahamarinana\nAzy ny fanjakana",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Telo izay iray",
+    "lyrics": "Ref: Telo izay iray, Telo izay Iray, Telo izay Iray\nTelo izay Iray, ny Andriamanitray\n\n1. Andriamanitr'i Abrahama, Isaka ary Jakoba\nIlay Rain'ny fahazavana, atao hoe Jehovah\nNamorona ny tany koa ny tsy hita\nIlay fiandohana sy ilay fiafarana\nMiazona ny zava-drehetra eo am-pelantanany\nIndrindra moa fa ireo tena zanany\nAo amin'ny ny harena sy ny voninahitra\nDia izy ilay Tsitoha Tompo avo indrindra\n\nRef: Telo izay iray, Telo izay Iray, Telo izay Iray\nTelo izay Iray, ny Andriamanitray\n\n2. Jesosy Kristy ilay Masin'Andriamanitra\nFahantaterahany, ary ihany koa fahendrena\nLay efa nateraka hatran'ny am-boalohany\nZanaka malala, be fitiavana\nFampihavanana antsika amin'ny Ray\nMpisorona be, Mandrakizay\nAo aminy harena, sy fahalalana rehetra\nDia izy ilay lalana ary koa fiainana\n\nRef: Telo izay iray, Telo izay Iray, Telo izay Iray\nTelo izay Iray, ny Andriamanitray\n\n3. Fanahy Masina, lay Mampianatra\nLay Mpananatra, lay Fananganana\nFanahy Masina, lay Mampibebaka\nFanahy Masina, lay Fahazavana\nLay Mpitarika\n\nRef: Telo izay iray, Telo izay Iray, Telo izay Iray\nTelo izay Iray, ny Andriamanitray",
+    "audioUrl": "",
+    "tags": []
+  },
+ {
+  "title": "Manao azafady",
+  "lyrics": "1. Manao zafady amignao Ndranahary\nMisoloho e! Fa lako loatsy ny raty vitagnay e\nLaha ny habe ny fitiavagnao, mampiahy agnay aty an-tagny e\nFa laha ny ota vitagnay fa tsy voalanja sasy e!\n\nRef : Fa namindragnao fo, fa lagnakao lahy e!\nManao ragnadria, tsy hagnano sasy e!\nLoso tsigny fa tsy sasy, afara tsy atao e!\nHagnenenako, mivalo aho e!\n\n2. Fa lako loatsy ny fakam-pagnahy mandalo\nZay ro maha avy ny fognay, mivalibalike\nMahatsiaro tsy mety, ka hagnao mifona\nDiso vatagny, ka fereneso aho e!",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+  "title": "Hihira ho anao",
+  "lyrics": "1. Hihira ho anao ry Raiko ô\nMenarana ny tany ny voninahitrao\nEo anatrehanao, ireo andronay\nToky sy hery tokoa ho anay mpanomponao\n\nRef : Hihira ho anao aho Jehovah Rainay ô!\nAlléluia\nFa he! mandrakizay ny fitiavanao anay\nAlléluia\n\n2. Hianao Jehovah ô!\nNo itokiako\nMpanafaka alahelo\nMampionona ny fo\nIzao rehetra izao\nManaiky ny herinao\nFa mahagaga tokoa\nNy fitiavanao\n\n3. (Hihira ho anao raha velona koa\nTsy misy ety an-tany\nIriko tahak'anao e!\nSambatra izay mandeha\nAmin'ny lalanao\nHo anao irery anie\nNy voninanitra) x2",
+  "audioUrl": "",
+  "tags": []
+},
+  
+   {
+  "title": "Indro ilay Mesia",
+  "lyrics": "1. Indro ilay Mesia mpamonjy\nIlay nantenaina hatrizay\nHitondra famonjena lehibe\nHo an'izao tontolo izao\nMpanjakan'ny mpanjaka izy\nTompon'ny hery rehetra\nNy dera sy ny voninahitra\nHo azy anio, mandrakizay\n\nRef : Alleluia, Alléluia\nAlléluia, Alléluia, Alléluia\nEfa nandrasana ela be\nIlay Mesia mpanavotra anao\n\n2. Tonga mazava ny aizim-pito\nNanelatselatra tokoa\nIreo mpiandry ondry marobe\nNitsaoka ilay Mesia vaovao\nIndray mihoby ny tontolo\nHidera ilay voahosotra\nIreo anjely maro mihira hoe:\n\"Hosana sy Alléluia\"\n\nRef : Alleluia, Alléluia\nAlléluia, Alléluia, Alléluia\nEfa nandrasana ela be\nIlay Mesia mpanavotra anao",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+  "title": "Midera an'i Jehovah",
+  "lyrics": "1. (Miderà an'i Jéhovah\nRy firenena rehetra\nFa lehibe ny Famindrampony\nSy ny fitiavany antsika) x2\n\nRef : (Mandrakizay) Masina (Mandrakizay) Masina\nTsy miova fa masina fona izy\nMasina, Masina\nBe voninahitra, be indrafo izy\n\nMiderà an'i Jéhovah\nRy firenena rehetra\nFa lehibe ny Famindrampony\nSy ny fitiavany antsika\n\n2. (Miderà an'i Jéhovah\nRy firenena rehetra\nFa izy no tena Andriamanitra\nRay be fitian'ny mpanota) x2\n\nRef : (Mandrakizay) Masina (Mandrakizay) Masina\nTsy miova fa masina fona izy\nMasina, Masina\nBe voninahitra, be indrafo izy\n\nMiderà an'i Jéhovah\nRy firenena rehetra\n(Fa izy no tena Andriamanitra\nRay be fitian'ny mpanota) x2",
+  "audioUrl": "",
+  "tags": []
+},
+{
+  "title": "Natory finaritra",
+  "lyrics": "1. Natory finaritra Jesô endrey\nNa vilona no nionandany e!\nNihoby ilay zaza ny kintana tao\nLay zaza mpanjaka malaza vaovao\n\n2. Arovy ry Jesô izahay olonao\nKa aza ho lavitra anay ianao\nNy olon-drehetra vimbino izao\nAmboary ny fonay ho mendrika anao",
+  "audioUrl": "",
+  "tags": []
+},
+  {
+    "title": "Raha Tonga anio",
+    "lyrics": "1. Raha tonga anio avy ao anatin'ny rahona Jesô\nMba hanao ahoana re?\nMoa ve mba vita tsara ve ny fiomananao ?\nHandray ny tompo lehibe\nNy hosana no ho ventesinao\nHampiseho ny fahavononanao\nSa ny vatolampy kosa no antsoinao\nHo avy hanarona anao\n\n2. Raha tonga an'io avy ao anatin'ny rahona Jesô\nHitsena ve ianao?\nHo tampoka aminao sa efa niandrasanao\nIzao fiaviany izao ?\nMoa ny fifaliana sy ny avotra\nNo antenainao ho entiny ho anao\nSa ny horohoro ary ny tahotra\nNo hameno ny ao anatinao?\n\n3. Raha tonga anio avy ao anatin'ny rahona Jesô\nMoa ve mba fantatrao?\nFa hiavaka eo ireo very ary ireo\nHo ao salema vaovao\nNosasany ve ireo helokao?\nAry hakarin'ny hianao ary\nSa ho fiampangana hanamelohana\nNy rà nalatsany tety ?",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Masina",
+    "lyrics": "(Masina, masina\nAndriananahary\nMasina, masina\nAndriananahary\nMasina, Masina (indrindra)\nAndriananahary) x2\n\n(Masina indrindra, Andriananahary\nMasina, Masina indrindra\nAmen, Amen) x2",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Eo am-pelatananao",
+    "lyrics": "1. Ry Jehovah, Ray Tsitoha ô!\nMiandrandra anao izahay\nAndriamanitra mpamonjy ô\nMba henoy ny vavakay\nIzao manjo anay ety izao mahaketraka tokoa\nNefa eo am-pelatananao\nIzay rehetra mahasoa\n\nRef: (Andriamanitra mpamonjy\nIndreto izahay mpanomponao\nManantena ny fitiavanao\nÔ! Ekeo ny hatakay) x2\n\n2. Izay rehetra eo an-tananay\nTsinotsino avokoa,\nHany toky hiankinanay\nDia ny teninao tokoa\nIzao fiainanay ety izao\nTsy hananan-javatsoa\nNefa eo am-pelatananao\nIzay rehetra mahasoa",
+    "audioUrl": "",
+    "tags": []
+  },
+  {
+    "title": "Eza anao",
+    "lyrics": "Anjaranao koa zio manano\nRaha maravoravo ny Tompo\nAnjaranao koa zio mamaly\nRaha tsara nataony taminao\nFa vita ny adidiny\nTanabon'ny hazofijaliana\nHanavôtany anô\n\nTsisy ambakizy\nNy jaly nahazo Kristy\nNiaritry mafy\nJesosy hanadio ny ôtanô\nAnô nofidiny\nNefa anô mifify\nEza anô fa ilaina mafy\nAmin'ny asan'ny Tompo\n\nMbola mifona ho anao\nKay i Jesosy jusque ziô ty\nMbô latsa-dranomaso Izy\nAmin'ny ota ataonô isan'andro\nMahaiza mba vôly èky e\nFa ho avy tsy ela Izy\nTsô anô tsy rèsiny\n\nMbôla tsy tara\nFa niany anô manantôna\nTsy mampilaza\nFa tampoko ny fiaviany\nTsô anô mbô tsy paré\nTsô anô tsy paré\nMbôla setry maré\nZahay mampandre anô fa:\nEfa ho avy JESOSY !!!",
+    "audioUrl": "",
+    "tags": []
+  }
 ]
